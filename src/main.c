@@ -357,6 +357,8 @@ static void select_single_click_handler(ClickRecognizerRef recognizer, void *con
   else {
     start_time = float_time_ms();
     punches = 0;
+    text_layer_set_text(s_average_freq_layer, "Freq: 0 p/min");
+    text_layer_set_text(s_total_punches_layer, "# Punches: 0");
   }
 }
 
