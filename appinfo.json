@@ -1,0 +1,37 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "hongyu.chen.15@dartmouth.edu",
+    "longName": "Jab - Float like a variable, Sting like a bee",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/jab_icon.png",
+                "menuIcon": true,
+                "name": "icon",
+                "type": "png"
+            },
+            {
+                "file": "images/speed.png",
+                "name": "SPEED_MODE_IMG",
+                "type": "png"
+            },
+            {
+                "file": "images/strength.png",
+                "name": "POWER_MODE_IMG",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "Jab",
+    "uuid": "0c48a598-cb25-423f-93c7-36dd57f0290b",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
