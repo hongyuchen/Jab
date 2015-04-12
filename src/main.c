@@ -58,9 +58,12 @@ static int calc_freq(int punches, double elapsed_time) {
 
 static void tap_handler(AccelAxisType axis, int32_t direction) {
   static char s_buffer[128];
-  text_layer_set_text(s_pq_layer, "Punch Detected!");
-  punches += 1;
+  if (force_mode) {
+    text_layer_set_text(s_pq_layer, "Punch Detected!");
   qidx = 0;
+    
+  }
+  punches += 1;
   
   snprintf(s_buffer, sizeof(s_buffer), "# Punches: %d", punches);
   text_layer_set_text(s_total_punches_layer, s_buffer);
